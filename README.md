@@ -1,3 +1,13 @@
+Prueba Técnica Front-End Bego
+
+Notas:
+- El botón its time for a pick up, que se activa pasado el tiempo desde end_date hasta la fecha actual, 
+    siempre estaría activo o con el contador en negativo, pues las fechas que devuelve la api son del 2022, entonces por esa razón,
+    la primer order le coloqué un tiempo de 6 minutos a partir de la hora actual, para ver el funcionamiento del botón con el contador
+    para después habilitarse el mismo
+- El endpoint de la api solo devuelve la información de la primer order, por lo que utilicé los mismos datos para todas las orders
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
