@@ -1,7 +1,7 @@
 "use client"
 
 import Order from "@/components/Order";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import "./home.css"
 import Search from "@/components/Search";
 import { useSearchParams } from "next/navigation";
@@ -49,7 +49,9 @@ export default function Home() {
 
   return (
     <section className="order-container">
-      <Search />
+      <Suspense fallback={<div>Cargando búsqueda...</div>}>
+        <Search />
+      </Suspense>
       {filteredOrders ? (
         filteredOrders.length > 0 ? (
           filteredOrders.map((order) => (
