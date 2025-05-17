@@ -40,7 +40,7 @@ export default function Order({ order }) {
                     <OrderDate date={order.destinations[1].end_date}/>
                 </div>
                 <div className="order-list end">
-                    {{/* Este es el timer, le paso un time de 6 minutos (360000 seg.) a la primer order para ver el funcionamiento */}}
+                    {/* Este es el timer, le paso un time de 6 minutos (360000 seg.) a la primer order para ver el funcionamiento */}
                     <Timer time={order._id === "624b5714296f8d9a820d01b3" ? Date.now() + 360000 : order.start_date}/>
                     <Button className={"resume"} onClick={() => setModal(true)}><span>Resume <IoMdEye /></span></Button>
                 </div>
