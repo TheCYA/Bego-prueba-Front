@@ -1,0 +1,16 @@
+.search-container{
+    display: flex;
+    align-items: center;
+}
+.search-container input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    padding: 0.5rem;
+    color: white;
+    &:focus{
+        border-radius: 1rem;
+        border: 1px solid white;
+    }
+}

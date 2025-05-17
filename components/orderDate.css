@@ -1,0 +1,26 @@
+.order-date{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgba(150, 151, 152, 1);
+    margin-bottom: 3rem;
+}
+
+.time{
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+@media ( width < 600px ) {
+    .time{
+        top: 4rem;
+        left: 1.5rem;
+        max-width: 90%;  
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+  }

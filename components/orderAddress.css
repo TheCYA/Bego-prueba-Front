@@ -1,0 +1,29 @@
+.order-address{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.address{
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    color: rgba(150, 151, 152, 1);
+}
+
+
+@media ( width < 600px ) {
+    .icon{
+        font-size: 1.5rem;
+    }
+    .address{
+        top: 4rem;
+        left: 1.5rem;
+        max-width: 90%;  
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+  }

@@ -1,0 +1,142 @@
+.order {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(8, 12, 15, 1);
+}
+
+.order .order-number{
+    font-weight: 600;
+    color: rgba(150, 151, 152, 1);
+    margin-bottom: 1rem;
+}
+
+.order .order-information .line{
+    position: absolute;
+    top: 6rem;
+    left: 1.5rem;
+    width: 2px;
+    height: 4rem;
+    background: linear-gradient(white, black);
+}
+
+.order .order-information .status{
+    height: 2rem;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+}
+
+.order .order-information .status p span{
+    display: inline flex;
+    width: 8px;
+    aspect-ratio: 1/1;
+    background-color: rgb(225, 109, 0);
+    border-radius: 50%;
+    margin-right: 4px ;
+    margin-bottom: 1px;
+}
+.order .order-information .status p .assigned{
+    display: inline flex;
+    width: 8px;
+    aspect-ratio: 1/1;
+    background-color: rgb(0, 180, 0);
+    border-radius: 50%;
+    margin-right: 4px ;
+    margin-bottom: 1px;
+}
+
+.order .order-information .pickup{
+    position: relative;
+    margin-top: 1rem;
+    &::after{
+        content: "PICKUP";
+        color: rgba(150, 151, 152, 1);
+        position: absolute;
+        top: 0;
+        left: 3rem;
+        font-size: small;
+    }
+}
+
+.order .order-information .dropoff{
+    position: relative;
+    margin-top: 1rem;
+    &::after{
+        content: "DROPOFF";
+        color: rgba(150, 151, 152, 1);
+        position: absolute;
+        top: 0;
+        left: 3rem;
+        font-size: small;
+    }
+}
+
+.order .order-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.order .order-list .order-type{
+    display: inline-flex;
+    gap: 0.5rem;
+}
+
+.order .order-information .end {
+    position: relative;
+}
+
+.order .order-information .end .resume {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+    background-color: rgba(255, 238, 0, 1);
+    border-radius: 100px 0 100px 100px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.order .order-list button span{
+    display: inline-flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+@media ( width < 600px ) {
+    .order .order-information .line{
+        top: 6.5rem;
+        left: 1.25rem;
+        width: 2px;
+        height: 8rem;
+    }
+    .order .order-information .status .not{
+        display: inline-flex;
+        align-items: center;
+        padding-left: 2rem;
+    }
+    .order .order-information .dropoff{
+        margin-bottom: 2rem;
+        &::after{
+            left: 2.6rem;
+        }
+    }
+    .order .order-information .end .resume {
+        padding: 0.5rem 1rem;
+        height: 3rem;
+        width: auto;
+        
+    }
+    .order .order-list button span{
+        font-size: smaller;
+        font-weight: 600;
+        gap: 0.5rem;
+    }
+  }

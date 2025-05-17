@@ -1,0 +1,24 @@
+.button{
+    background-color: rgba(255, 238, 0, 1);
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.dissabled{
+    color: gray;
+    background-color: black;
+    pointer-events: none;
+    cursor: none;
+}
+
+@media ( width < 600px ) {
+    button{
+        font-size: small;
+        padding: .5rem 1rem;
+        max-height: 3rem;
+    }
+  }

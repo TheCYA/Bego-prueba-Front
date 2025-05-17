@@ -1,0 +1,28 @@
+.timer .disabled{
+    display: none;
+}
+
+.timer button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    background-color: rgba(255, 238, 0, 1);
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 0px 100px 100px 100px;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+}
+
+@media ( width < 600px ) {
+    .timer button{
+        font-size: small;
+        padding: .5rem 1rem;
+        max-height: 3rem;
+    }
+    .active{
+        max-width: 50%;
+        font-size: smaller;
+    }
+  }

@@ -1,0 +1,40 @@
+/* home.css */
+.order-container {
+    width: 600px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow-y: auto; 
+    scrollbar-width: thin; 
+    scrollbar-color: #333 #111; 
+}
+
+
+.order-container::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.order-container::-webkit-scrollbar-track {
+    background: #111; 
+    border-radius: 4px;
+}
+
+.order-container::-webkit-scrollbar-thumb {
+    background-color: #333; 
+    border-radius: 4px;
+    border: 1px solid #222;
+}
+
+.loading {
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+@media ( width < 600px ) {
+    .order-container{
+      width: 340px;
+    }
+  }
